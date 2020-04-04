@@ -1,0 +1,35 @@
+server:
+  port: 18080
+  servlet:
+    context-path: /api
+
+spring:
+  profiles:
+    include:
+    - routes
+    - novelcovid19
+  output:
+    ansi:
+      enabled: DETECT
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  datasource:
+    url: jdbc:postgresql://localhost:5432/springbootdemo
+    username: postgres
+    password: postgres
+  mvc:
+    async:
+      request-timeout: -1 
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.rav.springbootdemo: DEBUG
+    sun.rmi.transport: ERROR

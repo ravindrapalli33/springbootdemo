@@ -1,0 +1,8 @@
+path:
+  error: '/error'
+  novelcovid19:
+    urls:
+      countries_base: '/countries'
+      all_countries: ''
+      get_country_by_name: '/{country}'
+      all_details: '/all'

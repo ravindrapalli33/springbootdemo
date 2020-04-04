@@ -1,0 +1,7 @@
+novelcovid19:
+  base_url: 'https://corona.lmao.ninja'
+  cookie: '__cfduid=def07234a3ab21a4eedb509294fea3e2f1585676029'
+  urls:
+    all_countries: 'countries'
+    country_details: 'countries'
+    all_details: 'all'
